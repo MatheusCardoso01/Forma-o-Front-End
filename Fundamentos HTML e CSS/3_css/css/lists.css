@@ -1,0 +1,9 @@
+/* 6 - listas com CSS */
+ul {
+    border: 1px solid yellowgreen;
+}
+
+li {
+    color: darkblue;
+    font-size: 25px;
+}

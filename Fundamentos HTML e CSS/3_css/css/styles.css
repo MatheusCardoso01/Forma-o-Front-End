@@ -1,0 +1,11 @@
+/* 4 - External */
+/* Ordem de prioridade do CSS inline -> internal == external */
+
+body {
+    padding-bottom: 500px;
+}
+
+h3 {
+    color: aqua;
+    font-size: 35px;
+}
