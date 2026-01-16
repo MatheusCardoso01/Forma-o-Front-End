@@ -9,3 +9,99 @@ h3 {
     color: aqua;
     font-size: 35px;
 }
+
+.paragraph {
+    background-color: #000;
+    color: aqua;
+    padding: 5px;
+}
+
+#exemplo {
+    background-color: darkgray; /* id prevalesce sobre classe */
+    font-size: 30px;
+    font-family: 'Lucida Handwriting', cursive;
+    border: 2px solid cyan;
+}
+
+/* 10 - ordem das regras */
+h2 {
+    border-bottom: 2px solid red;
+}
+
+.titulo {
+    border-bottom: 5px solid blue;
+}
+
+#algum-titulo {
+    border-bottom: 15px solid green;
+}
+
+.color-name-class {
+    color: crimson;
+}
+
+#color-name-id {
+    color: darkcyan;
+}
+
+.hex {
+    color: #14ceb5;
+}
+
+.hex2 {
+    color: #1c8a94;
+}
+
+.simple-hex {
+    color: #333;
+}
+
+.simple-hex2 {
+    color: #A5F;
+}
+
+.rgb {
+    color: rgb(255, 0, 0);
+}
+
+.mixed-rgb {
+    color: rgb(152, 46, 1);
+}
+
+.rgba {
+    color: rgb(60, 45, 200, 1);
+}
+
+.rgba2 {
+    color: rgba(60, 45, 200, 0.5);
+}
+
+.hsl {
+    color: hsl(100, 20%, 50%);
+}
+
+.hsl2 {
+    color: hsl(44, 56%, 33%);
+}
+
+.bg {
+    color: #14ceb5;
+    background-color: beige;
+}
+
+.bg2 {
+    color: #14ceb5;
+    background-color: #959595;
+}
+
+.bg-opacity {
+    background-color: green;
+    opacity: 0.3;
+    color: aquamarine;
+}
+
+.bg-opacity2 {
+    background-color: green;
+    opacity: 1;
+    color: aquamarine;
+}
