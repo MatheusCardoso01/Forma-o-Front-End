@@ -2,101 +2,170 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>CSS</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
 
-        <!-- 3 - internal css -->
-        <style>
-            p {
-                color: gold;
-                font-size: 40px;
-            }
-        </style>
+    <!-- 3 - internal css -->
+    <style>
+        p {
+            color: gold;
+            font-size: 40px;
+        }
+    </style>
 
-        <!-- 4 - External CSS -->
-        <link rel="stylesheet" href="css/styles.css">
-        <link rel="stylesheet" href="css/lists.css">
-    </head>
+    <!-- 4 - External CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/lists.css">
+</head>
 
-    <body>
-        <!-- 1 - CSS -->
-        <h1 style="color: blue;">Mudar cor usando 'Inline'</h1>
-        <h1 style="color: darkgreen;">Outro título, verde escuro</h1>
+<body>
+    <!-- 1 - CSS -->
+    <h1 style="color: blue;">Mudar cor usando 'Inline'</h1>
+    <h1 style="color: darkgreen;">Outro título, verde escuro</h1>
 
-        <!-- 2 - múltiplas regras -->
-        <h1 style="color: purple; font-size: 40px; border-bottom: 1px solid red;">Mudar cor e tamanho da fonte, com borda
-        </h1>
+    <!-- 2 - múltiplas regras -->
+    <h1 style="color: purple; font-size: 40px; border-bottom: 1px solid red;">Mudar cor e tamanho da fonte, com borda
+    </h1>
 
-        <!-- 3 - internal css -->
-        <p>Eu fui estilizado pelo internal css</p>
-        <p>Eu também, pois tenho a mesma tag</p>
-        <h2>Eu não, porque tenho outra tag</h2>
+    <!-- 3 - internal css -->
+    <p>Eu fui estilizado pelo internal css</p>
+    <p>Eu também, pois tenho a mesma tag</p>
+    <h2>Eu não, porque tenho outra tag</h2>
 
-        <!-- 4 - External CSS -->
-        <h3>Meu título ciano</h3>
+    <!-- 4 - External CSS -->
+    <h3>Meu título ciano</h3>
 
-        <!-- 5 - Orden do CSS -->
-        <p style="color: blueviolet;">Ordem do CSS - Inline Prevalece</p>
-        <p>Aqui outro parágrafo, sem Inline CSS - internal ou external, quem é chamado por último</p>
+    <!-- 5 - Orden do CSS -->
+    <p style="color: blueviolet;">Ordem do CSS - Inline Prevalece</p>
+    <p>Aqui outro parágrafo, sem Inline CSS - internal ou external, quem é chamado por último</p>
 
-        <!-- 6 - listas com CSS -->
+    <!-- 6 - listas com CSS -->
+    <ul>
+        <li>Banana</li>
+        <li>Maçã</li>
+        <li>Abacate</li>
+    </ul>
+    <!-- 7 - Desafio 2 -->
+    <!-- 8 - classes -->
+    <p class="paragraph">Texto com classe 'paragraph'</p>
+    <p class="paragraph">Texto diferente com mesma classe</p>
+
+    <!-- 9 - ID -> class -> seletor de tag -->
+    <p id="exemplo" class="paragraph">Texto com mesma classe mas com ID, adicionando e alterando estilo por ter
+        prioridade maior</p>
+
+    <!-- 10 - múltiplas regras, ordem do css -->
+    <h2 id="algum-titulo" class="titulo">Ordem de importância das tags de atributos: <span
+            style="background-color: lightgreen; color: darkgreen;">ID</span> -> Classe -> Seletor de Tags</h2>
+    <h2 class="titulo">Ordem de importância das tags de atributos: ID -> <span
+            style="background-color: aquamarine; color: blue;">Classe</span> -> Seletor de Tags</h2>
+    <h2>Ordem de importância das tags de atributos: ID -> Classe -> <span
+            style="background-color: antiquewhite; color: red;">Seletor de Tags</span></h2>
+
+    <!-- 11 - nome de cor -->
+    <p class="color-name-class">Use 'algumaTag' + '.' + 'nome da classe para gerar automaticamente a classe'</p>
+    <p id="color-name-id">Use 'algumaTag' + '#' + 'nome da classe para gerar automaticamente a classe'</p>
+    <p class="hex">Cor Hex: #14ceb5</p>
+    <p class="hex2">Cor Hex: #1c8a94</p>
+
+    <!-- 13 - mais sobre hex -->
+    <p class="simple-hex">Cor Hex simplificado: #333333 pode virar #333</p>
+    <p class="simple-hex2">Cor Hex simplificado: #AA55FF pode virar #A5F</p>
+
+    <!-- 14 - RGB -->
+    <p class="rgb">Este foi estilizado com o RGB: rgb(255, 0, 0)</p>
+    <p class="mixed-rgb">Este foi estilizado com o RGB: rgb(152, 46, 1)</p>
+
+    <!-- 15 - RGBa -->
+    <p class="rgba">Este foi estilizado com o RGBa: rgba(60, 45, 200, 1) opaco</p>
+    <p class="rgba2">Este foi estilizado com o RGBa: rgba(60, 45, 200, 0.5) transparente</p>
+
+    <!-- 16 - HSL (hue, saturation, lightness) -->
+    <p class="hsl">Este foi estilizado com o HSL: hsl(100, 20%, 50%)</p>
+    <p class="hsl2">Este foi estilizado com o HSL: hsl(44, 56%, 33%)</p>
+
+    <!-- 17 - backgroud-color -->
+    <p class="bg">Veja o backgroud-color em ação</p>
+    <p class="bg2">Veja outra variação do backgroud-color</p>
+
+    <!-- 18 - opacidade no bg (background-color) -->
+    <div class="bg-opacity">
+        <p>Usando opacidade no background-color com atributo 'opacity' de 0 a 1 (aqui 0.3)</p>
+    </div>
+
+    <div class="bg-opacity2">
+        <p>Usando opacidade no background-color com atributo 'opacity' de 0 a 1 (aqui 1, cor do texto é afetada)</p>
+    </div>
+
+    <!-- 19 - rgba com opacidade -->
+    <div class="rgba-opacity">
+        <h1>Este título precisa estar visível</h1>
+    </div>
+
+    <!-- 20 - bg image -->
+    <h1 class="bg-image">Este título tem uma imagem</h1>
+
+    <!-- 21 - centralizar imagem de background -->
+    <div class="not-centered-bg"></div>
+    <div class="centered-bg"></div>
+
+    <!-- 22 - largura e altura -->
+    <div class="height-width"></div>
+    <div class="height-width2"></div>
+
+    <!-- 23 - padding -->
+    <div class="without-padding">Este não tem <span style="text-decoration: line-through;">Padding</span></div>
+    <div class="padding">Este tem Padding</div>
+
+    <!-- 24 - lados individuais com padding -->
+    <p class="padding-individual">Este elemento aplica paddings diferentes nos lados</p>
+
+    <!-- 25 - shorthand padding -->
+    <p class="shorthand-padding">Propriedade do Padding que define lados neste ordem: top -> right -> botton -> left Ex.
+        20px 15px 10px 30px</p>
+    <p class="shorthand-padding2">Propriedade do Padding que define lados neste ordem: top e botton -> right e left Ex.
+        10px 20px</p>
+
+    <!-- 26 - padding com width - borderbox -->
+    <div class="without-border-box">
+        <p>Sem box-sizing: border-box, o tamanho total do elemento será conteúdo + padding</p>
+        <p>Exemplo: width: 600px e padding: 50px, a border-box fica com 700px de width</p>
+    </div>
+    <div class="border-box">
+        <p>Com box-sizing: border-box, o width representa conteúdo + padding e o conteúdo tem o que falta pro width</p>
+        <p>Exemplo: width: 600px e padding: 50px. padding total: 100px e conteúdo: 500px</p>
+    </div>
+
+    <!-- 27 - border -->
+    <div class="border">Conteúdo com border (borda), composição: largura, aparência e cor. Ex: 5px solid red</div>
+    <div class="border2">Conteúdo com border (borda), composição: largura, aparência e cor. Ex: 2px dotted #931</div>
+
+    <!-- 28 border em lados individuais -->
+    <p class="border-left">Borda na esquerda</p>
+    <p class="border-bottom">Borda inferior</p>
+
+    <!-- 29 - borda arredondada -->
+    <div class="rounded-p">Usando border-radius para arredondar as quinas da borda</div>
+    <div class="rounded-p2">Usando border-radius SEM BORDER. Quanto maior o border-radius, mais arredondado fica a
+        border-box</div>
+
+    <!-- 30 - margem -->
+    <div class="margin">Margem em todos os lados</div>
+    <div class="margin-top">Margem em cima</div>
+    <div class="margin-shorthand">Margem com propriedade shorthand: top right bottom left</div>
+
+    <!-- 31 - box model -->
+    <div class="box-model">
+        <p>Tenho todas as propriedades do box model:</p>
         <ul>
-            <li>Banana</li>
-            <li>Maçã</li>
-            <li>Abacate</li>
+            <li>Largura e altura do conteúdo</li>
+            <li>Padding</li>
+            <li>Border</li>
+            <li>Margin</li>
         </ul>
-        <!-- 7 - Desafio 2 -->
-        <!-- 8 - classes -->
-        <p class="paragraph">Texto com classe 'paragraph'</p>
-        <p class="paragraph">Texto diferente com mesma classe</p>
+    </div>
+</body>
 
-        <!-- 9 - ID -> class -> seletor de tag -->
-        <p id="exemplo" class="paragraph">Texto com mesma classe mas com ID, adicionando e alterando estilo por ter
-            prioridade maior</p>
-
-        <!-- 10 - múltiplas regras, ordem do css -->
-        <h2 id="algum-titulo" class="titulo">Ordem de importância das tags de atributos: <span
-                style="background-color: lightgreen; color: darkgreen;">ID</span> -> Classe -> Seletor de Tags</h2>
-        <h2 class="titulo">Ordem de importância das tags de atributos: ID -> <span
-                style="background-color: aquamarine; color: blue;">Classe</span> -> Seletor de Tags</h2>
-        <h2>Ordem de importância das tags de atributos: ID -> Classe -> <span
-                style="background-color: antiquewhite; color: red;">Seletor de Tags</span></h2>
-
-        <!-- 11 - nome de cor -->
-        <p class="color-name-class">Use 'algumaTag' + '.' + 'nome da classe para gerar automaticamente a classe'</p>
-        <p id="color-name-id">Use 'algumaTag' + '#' + 'nome da classe para gerar automaticamente a classe'</p>
-        <p class="hex">Cor Hex: #14ceb5</p>
-        <p class="hex2">Cor Hex: #1c8a94</p>
-
-        <!-- 13 - mais sobre hex -->
-        <p class="simple-hex">Cor Hex simplificado: #333333 pode virar #333</p>
-        <p class="simple-hex2">Cor Hex simplificado: #AA55FF pode virar #A5F</p>
-
-        <!-- 14 - RGB -->
-        <p class="rgb">Este foi estilizado com o RGB: rgb(255, 0, 0)</p>
-        <p class="mixed-rgb">Este foi estilizado com o RGB: rgb(152, 46, 1)</p>
-
-        <!-- 15 - RGBa -->
-        <p class="rgba">Este foi estilizado com o RGBa: rgba(60, 45, 200, 1) opaco</p>
-        <p class="rgba2">Este foi estilizado com o RGBa: rgba(60, 45, 200, 0.5) transparente</p>
-
-        <!-- 16 - HSL (hue, saturation, lightness) -->
-        <p class="hsl">Este foi estilizado com o HSL: hsl(100, 20%, 50%)</p>
-        <p class="hsl2">Este foi estilizado com o HSL: hsl(44, 56%, 33%)</p>
-
-        <!-- backgroud-color -->
-        <p class="bg">Veja o backgroud-color em ação</p>
-        <p class="bg2">Veja outra variação do backgroud-color</p>
-
-        <!-- opacidade no bg (background-color) -->
-        <div class="bg-opacity">
-            <p>Usando opacidade no background-color com atributo 'opacity' de 0 a 1 (aqui 0.3)</p>
-        </div>
-
-        <div class="bg-opacity2">
-            <p>Usando opacidade no background-color com atributo 'opacity' de 0 a 1 (aqui 1, cor do texto é afetada)</p>
-        </div>
-    </body>
 </html>
