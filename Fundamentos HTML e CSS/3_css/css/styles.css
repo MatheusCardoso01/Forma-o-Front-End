@@ -17,7 +17,8 @@ h3 {
 }
 
 #exemplo {
-    background-color: darkgray; /* id prevalesce sobre classe */
+    background-color: darkgray;
+    /* id prevalesce sobre classe */
     font-size: 30px;
     font-family: 'Lucida Handwriting', cursive;
     border: 2px solid cyan;
@@ -265,7 +266,7 @@ h2 {
     border: none;
 }
 
-.box-model p, 
+.box-model p,
 .box-model li {
     background-color: lightblue;
     color: #252222;
@@ -275,4 +276,142 @@ h2 {
     border-radius: 7px;
     width: 800px;
     height: 50px;
+}
+
+#box-model-challenge {
+    margin: 15px;
+    padding: 15px;
+    border: 5px solid #459;
+    outline: 5px solid #952;
+    background-color: #123;
+}
+
+.challenge-title {
+    background-color: #000;
+    color: #FFF;
+    border: none;
+}
+
+.text-aligned {
+    text-align: right;
+}
+
+.container-center {
+    text-align: center;
+    width: 600px;
+    border: 1px solid red;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.remove-underline {
+    text-decoration: none;
+    color: #1c8a94;
+    font-size: 35px;
+}
+
+.upper {
+    text-transform: uppercase;
+}
+
+.lower {
+    text-transform: lowercase;
+}
+
+.spacing {
+    letter-spacing: 9px;
+    border: none;
+}
+
+.fontes {
+    border: 3px solid rgb(28, 185, 159);
+    width: fit-content;
+    padding: 20px 50px;
+}
+
+.fontes h2 {
+    border-bottom: 1px solid gray;
+    font-size: 40px;
+    color: #1c8a94;
+}
+
+.fontes p {
+    color: rgb(28, 51, 145);
+}
+
+.serif {
+    font-family: serif;
+}
+
+.sans-serif {
+    font-family: sans-serif;
+}
+
+.monospace {
+    font-family: monospace;
+}
+
+.courier {
+    font-family: 'Courier New';
+}
+
+.cursive {
+    font-family: cursive;
+}
+
+.fantasy {
+    font-family: fantasy;
+}
+
+.helvetica {
+    font-family: Helvetica;
+}
+
+.georgia {
+    font-family: Georgia;
+}
+
+.lucida-handwriting {
+    font-family: 'Lucida Handwriting', cursive;
+}
+
+.italic {
+    font-style: italic;
+    font-family: 'Courier New';
+}
+
+.oblique {
+    font-style: oblique;
+    font-family: 'Courier New';
+}
+
+.thin {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 300;
+    border-top: 1px solid black;
+}
+
+.bold {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 600;
+}
+
+.bolder {
+    font-family: 'Montserrat', Arial, sans-serif;
+    font-weight: 800;
+    border-bottom: 1px solid black;
+}
+
+.small {
+    font-size: 15px;
+}
+
+.big {
+    font-size: 68px;
 }
